@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.codingblocks.cirricullumconnected">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".SecondYearActivity" />
+        <activity android:name=".ThirdYearActivity" />
+        <activity android:name=".FourthYearActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SingleSubjectnotes" />
+        <activity android:name=".SecondYearSubjects.Subject2" />
+        <activity android:name=".SecondYearSubjects.Subject3" />
+        <activity android:name=".SecondYearSubjects.Subject4" />
+        <activity android:name=".SecondYearSubjects.Subject5" />
+        <activity android:name=".SecondYearSubjects.Subject6" />
+        <activity android:name=".ThirdYearSubject.ThirdyearSubject1" />
+        <activity android:name=".ThirdYearSubject.ThirdYearSubject2" />
+        <activity android:name=".ThirdYearSubject.ThirdYearSubject3" />
+        <activity android:name=".ThirdYearSubject.ThirdYearElectiveCourses" />
+        <activity android:name=".SecondYearSubjects.Subject1" />
+        <activity android:name=".TeacherInformation.teacherprofile" />
+        <activity
+            android:name=".YearTabbedActivity"
+            android:label="@string/title_activity_year_tabbed"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

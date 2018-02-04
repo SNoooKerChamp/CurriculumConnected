@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+
+    tools:context="com.codingblocks.cirricullumconnected.RatingFragment.Ratingfragment">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kindly Rate the Note:"
+        android:layout_marginLeft="50dp"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:textSize="20sp"
+        android:textColor="@android:color/holo_green_light"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+
+
+        android:isIndicator="false"
+        android:id="@+id/rb_userrating"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="Submit"
+        android:layout_marginLeft="5dp"
+
+        android:id="@+id/btn_submit"
+        />
+    </LinearLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+</LinearLayout>

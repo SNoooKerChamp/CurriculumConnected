@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "934031857262",
+    "firebase_url": "https://cirricullumconnected.firebaseio.com",
+    "project_id": "cirricullumconnected",
+    "storage_bucket": "cirricullumconnected.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:934031857262:android:7fc1bad97ce3c8b4",
+        "android_client_info": {
+          "package_name": "com.codingblocks.cirricullumconnected"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "934031857262-hthrr8l9ol3e98ajma1db55ta901cb9r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.codingblocks.cirricullumconnected",
+            "certificate_hash": "1cf0f4cb1c0ea953350cd9597ca0c7bcef91e83a"
+          }
+        },
+        {
+          "client_id": "934031857262-mjjnlpeujdd0fi53spq2ctlc3dqkqicl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYLdUhJo0J0tAzVRR2BK1-DHRCs5vsVrA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "934031857262-mjjnlpeujdd0fi53spq2ctlc3dqkqicl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

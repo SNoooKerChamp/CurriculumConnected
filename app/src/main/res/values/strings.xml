@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CurriculumConnected</string>
+    <string name="about">This application is designed for fulfilling the purpose of inter connectivity of each group within the Mechanial Department encompassing each and every semester. Unfortunately in this great college the teaching level has significantly deteriorated and only some select teachers teach with that same passion and dedication that used to be followed in the erstwhile DCE.Due to the play of probability and permutation and combination, some group get really good teachers and other suffer.To narrow down on this disparity this app attempts to bring all notes and topics covered by each teacher in each group under one platform so that teaching material is equally available to all.  Now you might have been thinking what new does this app offers?  This app allows you to rate and review each note which will be accounted each day and accordingly they will be ranked.This will help students to select the right study material easily and will be more helpful for those who remain busy in their respective Tech Teams.   Contributions and suggestions from your side will be cherished!   THANK YOU! for having patience of reading it.</string>
+    <string name="title_activity_year_tabbed">YearTabbedActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
