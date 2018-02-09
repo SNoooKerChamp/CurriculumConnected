@@ -18,6 +18,7 @@ import com.bumptech.glide.Glide
 import com.codingblocks.cirricullumconnected.R
 import com.codingblocks.cirricullumconnected.RatingFragment.Ratingfragment
 import com.codingblocks.cirricullumconnected.SingleSubjectnotes
+import com.codingblocks.cirricullumconnected.YearTabbedActivity
 import kotlinx.android.synthetic.main.activity_subject3.*
 
 class Subject3 : AppCompatActivity() {
@@ -28,6 +29,11 @@ class Subject3 : AppCompatActivity() {
     var teacherlist1 = arrayOf("Dr Raj Kr Singh", "Mr M Zunaid")
     var averagelist = arrayOf("0.0", "0.0", "0.0")
     var fragmentmanager: FragmentManager? = null
+
+    override fun onBackPressed() {
+        startActivity(Intent(this@Subject3, YearTabbedActivity::class.java))
+        super.onBackPressed()
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

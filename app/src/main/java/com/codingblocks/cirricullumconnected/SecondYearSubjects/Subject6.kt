@@ -8,6 +8,7 @@ import com.codingblocks.cirricullumconnected.R
 class Subject6 : AppCompatActivity() {
 
     // to be implemented in future
+    // or may not be implemented...
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

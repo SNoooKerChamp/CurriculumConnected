@@ -1,7 +1,10 @@
 package com.codingblocks.cirricullumconnected.RatingFragment;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.ConnectivityManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -21,6 +24,9 @@ import com.codingblocks.cirricullumconnected.SecondYearSubjects.Subject2;
 import com.codingblocks.cirricullumconnected.SecondYearSubjects.Subject3;
 import com.codingblocks.cirricullumconnected.SecondYearSubjects.Subject4;
 import com.codingblocks.cirricullumconnected.SecondYearSubjects.Subject5;
+import com.codingblocks.cirricullumconnected.ThirdYearSubject.ThirdYearSubject2;
+import com.codingblocks.cirricullumconnected.ThirdYearSubject.ThirdYearSubject3;
+import com.codingblocks.cirricullumconnected.ThirdYearSubject.ThirdyearSubject1;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -103,6 +109,65 @@ public class Ratingfragment extends Fragment {
             @Override
             public void onClick(View view) {
 
+                Context context = getContext();
+                ConnectivityManager conmanager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+
+                if ( conmanager.getActiveNetworkInfo().isConnected() == false) {
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage("Not Connected to Internet :(").setNeutralButton("Retry", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int q) {
+                            switch (mParam2) {
+                                case "ManufacturingMachines":
+                                    Intent i = new Intent(getActivity(), Subject1.class);
+
+                                    startActivity(i);
+                                    break;
+                                case "Thermal Engg II(ME 202)":
+                                    Intent i1 = new Intent(getActivity(), Subject2.class);
+
+                                    startActivity(i1);
+                                    break;
+                                case "Fluid Mechanics(ME 204)":
+                                    Intent i2 = new Intent(getActivity(), Subject3.class);
+
+                                    startActivity(i2);
+                                    break;
+
+                                case "Kinematics of Machines(ME 204)":
+                                    Intent i3 = new Intent(getActivity(), Subject4.class);
+
+                                    startActivity(i3);
+                                    break;
+
+                                case "Manufacturing Technology I(ME 208)":
+                                    Intent i4 = new Intent(getActivity(), Subject5.class);
+
+                                    startActivity(i4);
+                                    break;
+                                case "Heat and Mass Transfer":
+                                    Intent i5 = new Intent(getActivity(), ThirdyearSubject1.class);
+
+                                    startActivity(i5);
+                                    break;
+                                case "Production and Operations":
+                                    Intent i6 = new Intent(getActivity(), ThirdYearSubject2.class);
+
+                                    startActivity(i6);
+                                    break;
+
+                                case "Professional Ethics and Human Values":
+                                    Intent i7 = new Intent(getActivity(), ThirdYearSubject3.class);
+
+                                    startActivity(i7);
+                                    break;
+
+
+                            }
+                        }
+                    }).create().show();
+                }
+
                 String key = databaseteacherreference.push().getKey();
 
                 databaseteacherreference.child(key).setValue(Float.valueOf(userrating.getRating()));
@@ -159,6 +224,25 @@ public class Ratingfragment extends Fragment {
                                 i4.putExtra("Average", String.valueOf(averagerounded));
                                 i4.putExtra("Teacher", mParam1);
                                 startActivity(i4);
+                                break;
+                            case "Heat and Mass Transfer":
+                                Intent i5 = new Intent(getActivity(), ThirdyearSubject1.class);
+                                i5.putExtra("Average", String.valueOf(averagerounded));
+                                i5.putExtra("Teacher", mParam1);
+                                startActivity(i5);
+                                break;
+                            case "Production and Operations":
+                                Intent i6 = new Intent(getActivity(), ThirdYearSubject2.class);
+                                i6.putExtra("Average", String.valueOf(averagerounded));
+                                i6.putExtra("Teacher", mParam1);
+                                startActivity(i6);
+                                break;
+
+                            case "Professional Ethics and Human Values":
+                                Intent i7 = new Intent(getActivity(), ThirdYearSubject3.class);
+                                i7.putExtra("Average", String.valueOf(averagerounded));
+                                i7.putExtra("Teacher", mParam1);
+                                startActivity(i7);
                                 break;
 
 

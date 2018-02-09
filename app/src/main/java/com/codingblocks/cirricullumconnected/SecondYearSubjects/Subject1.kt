@@ -19,6 +19,7 @@ import com.codingblocks.cirricullumconnected.R
 import com.codingblocks.cirricullumconnected.RatingFragment.Ratingfragment
 import com.codingblocks.cirricullumconnected.SingleSubjectnotes
 import com.codingblocks.cirricullumconnected.TeacherInformation.teacherprofile
+import com.codingblocks.cirricullumconnected.YearTabbedActivity
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_subject1_notes.*
 import java.util.*
@@ -29,6 +30,11 @@ class Subject1 : AppCompatActivity() {
 
     var fragmentmanager: FragmentManager? = null
 
+
+    override fun onBackPressed() {
+        startActivity(Intent(this@Subject1, YearTabbedActivity::class.java))
+        super.onBackPressed()
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

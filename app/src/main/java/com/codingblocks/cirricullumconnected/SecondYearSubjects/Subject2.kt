@@ -19,6 +19,7 @@ import com.codingblocks.cirricullumconnected.R
 import com.codingblocks.cirricullumconnected.RatingFragment.Ratingfragment
 import com.codingblocks.cirricullumconnected.SingleSubjectnotes
 import com.codingblocks.cirricullumconnected.TeacherInformation.teacherprofile
+import com.codingblocks.cirricullumconnected.YearTabbedActivity
 import kotlinx.android.synthetic.main.activity_subject2.*
 
 class Subject2 : AppCompatActivity() {
@@ -26,6 +27,11 @@ class Subject2 : AppCompatActivity() {
     var averagelist = arrayOf("0.0", "0.0", "0.0")
     var fragmentmanager: FragmentManager? = null
 
+
+    override fun onBackPressed() {
+        startActivity(Intent(this@Subject2,YearTabbedActivity::class.java))
+        super.onBackPressed()
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
